@@ -1,46 +1,50 @@
-Clonar el repositorio 'logistic_regression'
+# Logistic Regression
 
-Crear un entorno virtual, por ejemplo, uno llamado 'env':
+## INSTALACIÓN
 
-Ir a la carpeta del proyecto:
 
+### Clonar el repositorio del proyecto 'logistic_regression'
+```bash
+git clone https://github.com/financieras/logistic_regression.git
+```
+
+### Ir a la carpeta del proyecto
 ```bash
 cd logistic_regression
 ```
-Crear el entorno virtual con Python3:
 
+### Crear un entorno virtual llamado '.venv'
+El nombre lleva punto para que sea oculto y no moleste visualmente
+#### Debes estar en la carpeta del proyecto
 ```bash
-python3 -m venv env
+python3 -m venv .venv
 ```
 
-Activar el entorno virtual:
-
+### Activar el entorno virtual
 ```bash
-source env/bin/activate
+source .venv/bin/activate
+```
+Ahora verás que al inicio del promt pone (.venv)
+
+### Recomendable: actualiza PIP
+```bash
+pip install --upgrade pip
 ```
 
-Para aplicar el archivo requirements.txt en su entorno virtual activado en Ubuntu, siga estos pasos:
-
-1. Asegúrese de que su entorno virtual 'env' esté activado. Debería ver (env) al inicio de su línea de comando.
-
-2. Navegue al directorio donde se encuentra su archivo requirements.txt. Generalmente, este archivo está en la raíz del proyecto. Si ya está en ese directorio, puede omitir este paso.
-
-3. Ejecute el siguiente comando para instalar todas las dependencias listadas en el archivo requirements.txt:
-
+### Instalar los paquetes
+- Instalar los paquetes necesarios para el proyecto dentro del entorno virtual
+- Instalar las dependencias listadas en el archivo requirements.txt en tu entorno virtual
 ```bash
 pip install -r requirements.txt
 ```
 
-Este comando le indicará a pip que instale todos los paquetes y sus versiones específicas tal como están listados en el archivo requirements.txt[1][3].
-
-4. Espere a que pip complete la instalación de todas las dependencias. Verá una salida en la terminal que muestra el progreso de la instalación.
-
-5. Una vez finalizada la instalación, puede verificar que los paquetes se hayan instalado correctamente usando:
-
+## Entrar a Jupyter Lab
 ```bash
-pip list
+jupyter lab
 ```
 
-Este comando mostrará todos los paquetes instalados en su entorno virtual.
-
-Siguiendo estos pasos, habrá aplicado exitosamente el archivo requirements.txt a su entorno virtual en Ubuntu.
+## Optativo: desactivar el entorno virtual
+Al terminar de trabajar, desactivar el entorno virtual con el comando:
+```bash
+deactivate
+```
